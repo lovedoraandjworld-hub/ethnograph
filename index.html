@@ -96,31 +96,93 @@ body{margin:0!important;padding:0!important}
   .header{height:auto;min-height:70px;flex-wrap:wrap;padding:12px 16px}.nav{order:3;width:100%;overflow:auto}.search{display:none}.header .primary{padding:9px 11px}.hero{padding:38px 18px}.hero-copy h1{font-size:42px}.stats-strip{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.map-art{height:460px;min-height:460px}.section{padding:54px 18px}.sidebar{grid-template-columns:1fr}.map-container{height:520px}
 }
 
+
+/* ===== FEEDBACK REVISION 13.09 ===== */
+.hero{min-height:calc(100vh - 78px);display:grid;place-items:center;padding:72px 24px;background:
+linear-gradient(180deg,rgba(5,12,10,.42),rgba(4,10,8,.82)),
+radial-gradient(circle at 50% 68%,rgba(87,106,70,.18),transparent 42%),
+linear-gradient(135deg,#0b1713,#07100d 55%,#0b1410);}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:42%;opacity:.24;background:
+linear-gradient(170deg,transparent 0 35%,rgba(175,151,102,.16) 36% 37%,transparent 38%),
+linear-gradient(10deg,transparent 0 45%,rgba(175,151,102,.10) 46% 47%,transparent 48%);pointer-events:none}
+.hero-grid{display:block;max-width:920px;text-align:center}.hero-copy{margin:auto;max-width:900px}.hero-copy h1{font-size:clamp(52px,6.6vw,96px);letter-spacing:.04em;line-height:1.05}.hero-copy p{max-width:760px;margin:24px auto 0;font-size:18px}.hero .actions{justify-content:center}.hero .stats-strip{max-width:680px;margin:38px auto 0}.map-art{display:none!important}
+.full-page{min-height:calc(100vh - 78px);display:flex;flex-direction:column;justify-content:center}
+.section-wide{max-width:1540px}
+.map-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.map-add-hint{display:none;margin:0 0 14px;padding:11px 14px;border:1px solid rgba(214,186,134,.35);background:#171d18;color:#d7c49a}.map-add-hint.active{display:block}
+.key-button{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(214,186,134,.35);background:#111814;color:#d8c18e;padding:10px 14px;cursor:pointer;font:inherit}.key-button .key-icon{font-size:20px;filter:grayscale(1);opacity:.72}.key-button.active{background:#6a4c25;color:#fff1d0;border-color:#d0a55b}.key-button.active .key-icon{filter:none;opacity:1}.key-count{font-weight:700}.object-headline{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.object-headline .key-button{margin-right:44px}
+.steps-five{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}.step-big{min-height:190px;padding:18px 16px;border:1px solid rgba(214,186,134,.19);background:rgba(14,20,17,.74);position:relative}.step-num{font-size:12px;color:#9c8a68}.step-icon{font-size:32px;margin:18px 0 12px}.step-big b{display:block;color:#ead7af;font-size:17px}.step-big p{font-size:13px;color:#a59b87;line-height:1.5}
+.program-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:18px;margin-top:30px}.bonus-card{border:1px solid var(--line);padding:28px;background:linear-gradient(145deg,#171d18,#0e1512)}.bonus-card h3{font:32px Georgia,serif;margin:0 0 14px}.bonus-card .key-lead{font-size:20px;color:#dbc08a;margin-bottom:14px}.bonus-card ol{padding-left:22px;color:#bbb19e;line-height:1.65}.bonus-card li{margin:10px 0}.ranking-panel{border:1px solid var(--line);background:#101613;padding:18px}.ranking-scroll{max-height:470px;overflow:auto;padding-right:6px}.ranking-scroll::-webkit-scrollbar{width:8px}.ranking-scroll::-webkit-scrollbar-thumb{background:#5e4c31}.rank-row.winner{background:linear-gradient(90deg,rgba(125,93,47,.55),rgba(46,39,28,.34));border-color:rgba(214,186,134,.34)}.rank-score{display:flex;align-items:center;gap:5px}
+.prizes-wrap{display:grid;gap:22px}.prize-label{font-size:13px;letter-spacing:.08em;color:#a79067;text-transform:uppercase;margin-bottom:-8px}.prize-grid-five{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.prize-grid-three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.prize-card{min-height:150px;border:1px solid rgba(214,186,134,.23);padding:18px;background:linear-gradient(180deg,#151b17,#0d1310);display:flex;flex-direction:column;justify-content:space-between}.prize-card .prize-icon{font-size:30px}.prize-card b{font-size:15px;color:#ebdcc0}.prize-card span{font-size:12px;color:#968b77;line-height:1.45}.partner{border-style:solid}
+.picker-wrap{border:1px solid rgba(214,186,134,.24);padding:10px;background:#0f1512}.picker-title{font-size:13px;color:#cbb68e;margin:0 0 8px}.picker-map{height:320px;width:100%;background:#121916}.picked-address{font-size:12px;color:#a89d89;margin-top:8px}.hidden-coord{display:none!important}.voice-upload{border:1px dashed rgba(214,186,134,.25);padding:12px;font-size:13px;color:#9f957f}.voice-upload input{margin-top:8px}.modal-mini-map{height:170px;margin-top:14px;border:1px solid rgba(214,186,134,.16);background:#111714}
+.tech-note{font-size:12px;color:#8f8571;margin-top:10px;line-height:1.5}.ai-badge-real{display:inline-block;padding:6px 10px;border:1px solid rgba(158,194,171,.35);color:#a8c8b6;background:#111a16;font-size:11px;margin:8px 0 12px}
+.login-profile{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center;padding:16px;border:1px solid var(--line);margin:14px 0}.avatar-demo{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#3d3122;color:#e6cf9e;font-size:24px}.profile-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.profile-stat{border:1px solid rgba(214,186,134,.15);padding:10px;text-align:center}.profile-stat b{display:block;color:#ddc48f;font-size:18px}.profile-stat span{font-size:11px;color:#8f8572}
+@media(max-width:1100px){.steps-five{grid-template-columns:repeat(2,1fr)}.program-grid{grid-template-columns:1fr}.prize-grid-five{grid-template-columns:repeat(2,1fr)}.prize-grid-three{grid-template-columns:1fr}.object-headline{display:block}.object-headline .key-button{margin:12px 0 0}}
+@media(max-width:650px){.hero-copy h1{font-size:48px}.steps-five,.prize-grid-five{grid-template-columns:1fr}.hero .stats-strip{grid-template-columns:repeat(2,1fr)}.profile-stats{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
-<div id="ethnocode-app"><header class="header">
+<div id="ethnocode-app">
+<header class="header">
   <div class="brand"><div class="brand-mark">✣</div><div><div class="brand-title">ЭТНОКОД</div><div class="brand-sub">цифровой музей<br>культуры России</div></div></div>
-  <nav class="nav"><a class="active" href="#mapSection">Карта</a><a href="#collection">Коллекции</a><a href="#about">О проекте</a><a href="#ranking">Рейтинг</a><a href="#partners">Партнёры</a></nav>
+  <nav class="nav"><a href="#mapSection">Карта</a><a href="#collection">Коллекции</a><a href="#about">О проекте</a><a href="#ranking">Рейтинг</a><a href="#bonus">Бонусная программа</a><a href="#partners">Партнёры</a></nav>
   <div class="spacer"></div><input class="search" id="headerSearch" placeholder="Поиск по предметам, местам, людям…"><button class="link-btn" id="loginBtn">Войти</button><button class="primary" id="openAddModalBtn">Поделиться предметом</button>
 </header>
-<section class="hero" id="about"><div class="hero-grid">
-  <div class="hero-copy"><h1 class="serif">Открой культуру<br>своей страны</h1><p>ЭТНОКОД собирает семейные истории, предметы быта и локальные традиции в единую живую карту культурного наследия России.</p><div class="actions"><button class="btn gold" id="joinBtn">Как участвовать?</button><button class="btn ghost" onclick="document.getElementById('mapSection').scrollIntoView()">Открыть карту</button></div>
-    <div class="stats-strip"><div class="stat"><b id="heroItems">0</b><span>предметов</span></div><div class="stat"><b>1 342</b><span>населённых пункта</span></div><div class="stat"><b>68</b><span>регионов</span></div><div class="stat"><b>3 528</b><span>историй</span></div></div>
+
+<section class="hero" id="about"><div class="hero-grid"><div class="hero-copy">
+  <h1 class="serif">Открой культуру<br>своей страны</h1>
+  <p>ЭТНОКОД собирает семейные истории, предметы быта и локальные традиции в единую живую карту культурного наследия России.</p>
+  <div class="actions"><button class="btn gold" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">Как участвовать?</button><button class="btn ghost" onclick="document.getElementById('mapSection').scrollIntoView({behavior:'smooth'})">Открыть карту</button></div>
+  <div class="stats-strip"><div class="stat"><b id="heroItems">0</b><span>предметов</span></div><div class="stat"><b>1 342</b><span>населённых пункта</span></div><div class="stat"><b>68</b><span>регионов</span></div><div class="stat"><b>3 528</b><span>историй</span></div></div>
+</div></div></section>
+
+<section class="section section-wide full-page" id="mapSection">
+  <div class="section-head"><div><h2>Интерактивная карта</h2><p class="lead">Исследуйте предметы по регионам. Чтобы добавить свой предмет, можно сразу выбрать точку на карте — вводить широту и долготу больше не нужно.</p></div><div class="map-actions"><button class="btn gold" id="mapAddBtn">＋ Добавить предмет на карту</button><button class="btn" id="openCollectionBtn">Моя коллекция: <span id="savedCount">0</span></button></div></div>
+  <div id="mapAddHint" class="map-add-hint">Режим добавления включён: приблизьте карту и нажмите на точное место. После клика откроется форма предмета.</div>
+  <div class="map-layout"><div class="map-container"><div id="map" style="width:100%;height:100%"></div></div><aside class="sidebar"><div class="panel"><h3>Поиск и фильтры</h3><input class="input" id="searchInput" placeholder="Название, описание, место"><div class="filter-row"><select class="select" id="categoryFilter"><option value="">Все категории</option></select><select class="select" id="regionFilter"><option value="">Все регионы</option></select></div></div><div class="panel"><h3>Объекты на карте</h3><ul class="object-list" id="objectList"></ul></div></aside></div>
+</section>
+
+<section class="section section-wide full-page" id="collection">
+  <div class="mission-card" style="background:transparent;border:0;padding:0"><h3 style="font-size:38px">Сохраняем не вещи — сохраняем память</h3><p class="lead">Главная ценность проекта — связь предмета с конкретной семьёй, местом и человеком. Участник не просто загружает объект, а помогает собрать живую карту культурной памяти.</p>
+    <div class="steps-five">
+      <div class="step-big"><div class="step-num">01</div><div class="step-icon">🗺</div><b>Исследуйте</b><p>Открывайте новые регионы и находите культурные объекты.</p></div>
+      <div class="step-big"><div class="step-num">02</div><div class="step-icon">▣</div><b>Добавляйте</b><p>Загружайте свои истории, фото и материалы о культуре и традициях.</p></div>
+      <div class="step-big"><div class="step-num">03</div><div class="step-icon">☵</div><b>Делитесь</b><p>Комментируйте, помогайте другим и участвуйте в обсуждениях.</p></div>
+      <div class="step-big"><div class="step-num">04</div><div class="step-icon">🔑</div><b>Собирайте «ключики»</b><p>Ваши материалы могут понравиться другим пользователям и попасть в их коллекции.</p></div>
+      <div class="step-big"><div class="step-num">05</div><div class="step-icon">🎁</div><b>Выигрывайте призы</b><p>Первые пять участников ежемесячного рейтинга получают подарки партнёров.</p></div>
+    </div>
   </div>
-  <div class="map-art"><div class="russia-shape"></div><div class="river"></div><div class="artifact a1">🏛<small>Санкт‑Петербург</small></div><div class="artifact a2">🏺<small>Приволжский ФО</small></div><div class="artifact a3">🧵<small>Уральский ФО</small></div><div class="artifact a4">🪕<small>Сибирский ФО</small></div><div class="artifact a5">🐴<small>Якутия</small></div><div class="artifact a6">🛖<small>Дальний Восток</small></div><div class="hero-tip">Нажмите на регион или предмет, чтобы узнать больше</div></div>
-</div></section>
-<section class="section" id="mapSection"><div class="section-head"><div><h2>Интерактивная карта</h2><p class="lead">Исследуйте предметы по регионам, находите личные истории и сохраняйте интересные объекты в свою коллекцию.</p></div><button class="btn" id="openCollectionBtn">Избранное: <span id="savedCount">0</span></button></div>
-<div class="map-layout"><div class="map-container"><div id="map" style="width:100%;height:100%"></div></div><aside class="sidebar"><div class="panel"><h3>Поиск и фильтры</h3><input class="input" id="searchInput" placeholder="Название, описание, место"><div class="filter-row"><select class="select" id="categoryFilter"><option value="">Все категории</option></select><select class="select" id="regionFilter"><option value="">Все регионы</option></select></div></div><div class="panel"><h3>Объекты на карте</h3><ul class="object-list" id="objectList"></ul></div></aside></div></section>
-<section class="section" id="collection"><div class="about-grid"><div class="mission-card"><h3>Сохраняем не вещи — сохраняем память</h3><p class="lead">Главная ценность проекта — не музейная витрина, а связь предмета с конкретной семьёй, местом и человеком.</p><div class="steps"><div class="step"><b>01. Добавьте</b><span>Фотографию предмета, место и краткую историю.</span></div><div class="step"><b>02. Расскажите</b><span>Запишите голос потомка семьи или владельца.</span></div><div class="step"><b>03. Сохраните</b><span>После модерации объект появится на общей карте.</span></div></div><div class="actions"><button class="btn gold" onclick="openAddModal()">Поделиться предметом</button></div></div>
-<div class="panel" id="ranking"><h3>Рейтинг участников</h3><div class="rank-list"><div class="rank-row"><div class="rank-pos">1</div><div class="rank-user"><b>Анна Петрова</b><small>Нижегородская область</small></div><div class="rank-score">1280</div></div><div class="rank-row"><div class="rank-pos">2</div><div class="rank-user"><b>Михаил Орлов</b><small>Республика Карелия</small></div><div class="rank-score">1055</div></div><div class="rank-row"><div class="rank-pos">3</div><div class="rank-user"><b>Елена Смирнова</b><small>Архангельская область</small></div><div class="rank-score">970</div></div><div class="rank-row"><div class="rank-pos">4</div><div class="rank-user"><b>Илья Сафонов</b><small>Татарстан</small></div><div class="rank-score">820</div></div></div></div></div></section>
-<section class="section" id="partners"><div class="section-head"><div><h2>Партнёры проекта</h2><p class="lead">Здесь можно разместить реальные организации, музеи, архивы и образовательные партнёрства проекта.</p></div></div><div class="partners"><div class="partner">Музей‑партнёр</div><div class="partner">Региональный архив</div><div class="partner">Университет</div><div class="partner">Культурный фонд</div><div class="partner">Медиа‑партнёр</div></div></section>
+  <div class="program-grid" id="bonus">
+    <div class="bonus-card"><h3>🔑 Бонусная программа</h3><div class="key-lead">Собирайте «ключики» — попадайте в рейтинг</div><p>Добавляйте свои предметы и истории на карту ЭТНОКОДА. Другие участники могут отметить понравившийся материал «ключиком» — это наш аналог лайка.</p>
+      <ol><li><b>Добавьте свой предмет.</b> Поделитесь фотографией, историей семьи, предметом быта или традицией.</li><li><b>Получайте «ключики».</b> Другие пользователи отмечают понравившийся материал.</li><li><b>Собирайте признание единомышленников.</b> Чем больше «ключиков», тем заметнее ваш вклад внутри сообщества.</li><li><b>Попадайте в ежемесячный рейтинг.</b> Количество собранных «ключиков» определяет позицию участника.</li><li><b>Получайте подарки.</b> Участники, занявшие 1–5 место, выбирают подарок от партнёров проекта.</li></ol>
+    </div>
+    <div class="ranking-panel" id="ranking"><div class="section-head" style="margin-bottom:12px"><div><h3 style="margin:0;color:#dcc494">Рейтинг участников</h3><p class="lead" style="font-size:12px">Первые пять — текущие победители месяца</p></div></div><div class="ranking-scroll" id="rankingList"></div></div>
+  </div>
+</section>
+
+<section class="section section-wide" id="prizes"><div class="section-head"><div><h2>Призы за вклад в культуру</h2><p class="lead">Два типа наград: офлайн-впечатления в музеях и культурных площадках, а также цифровые образовательные продукты, доступные из любого региона.</p></div></div>
+<div class="prizes-wrap"><div class="prize-label">Верхний ряд — 5 офлайн-призов</div><div class="prize-grid-five">
+  <div class="prize-card"><div class="prize-icon">🏛</div><b>Российский этнографический музей</b><span>Санкт-Петербург · музейный билет / специальная программа</span></div>
+  <div class="prize-card"><div class="prize-icon">🎨</div><b>Усадьба Лукутиных</b><span>Федоскино · музей народных художественных промыслов</span></div>
+  <div class="prize-card"><div class="prize-icon">🌺</div><b>Музей при Жостовской фабрике</b><span>Московская область · декоративная роспись и промыслы</span></div>
+  <div class="prize-card"><div class="prize-icon">🖼</div><b>Всероссийский музей декоративного искусства</b><span>Москва · декоративное и народное искусство</span></div>
+  <div class="prize-card"><div class="prize-icon">🏰</div><b>Музей-заповедник «Кусково»</b><span>Москва · культурная площадка и музейный комплекс</span></div>
+</div><div class="prize-label">Нижний ряд — 3 цифровых продукта</div><div class="prize-grid-three">
+  <div class="prize-card"><div class="prize-icon">A</div><b>Arzamas</b><span>Подписка или курс по истории и культуре, включая «Историю русской культуры».</span></div>
+  <div class="prize-card"><div class="prize-icon">◐</div><b>Правое полушарие Интроверта</b><span>Подписка на лекции или курс по истории, искусству или культуре.</span></div>
+  <div class="prize-card"><div class="prize-icon">S</div><b>Skillbox</b><span>Онлайн-курс по истории и культуре: например, мировая история или Средневековье.</span></div>
+</div></div></section>
+
+<section class="section section-wide" id="partners"><div class="section-head"><div><h2>Партнёры проекта</h2><p class="lead">Организации, музеи, культурные и образовательные площадки, с которыми может развиваться ЭТНОКОД.</p></div></div><div class="partners"><div class="partner">Музеи России</div><div class="partner">Региональные архивы</div><div class="partner">Культурные центры</div><div class="partner">Образовательные платформы</div><div class="partner">Медиа‑партнёры</div></div></section>
 <footer class="footer">ЭТНОКОД · цифровой музей культуры России · 2026</footer>
 
-<div class="modal-overlay" id="objectModal"><div class="modal"><button class="modal-close" onclick="closeModal('objectModal')">×</button><div class="breadcrumbs" id="modalBreadcrumbs"></div><div class="object-modal-grid"><div><h2 id="modalTitle">Предмет</h2><div class="modal-region" id="modalRegion"></div><div class="tags" id="modalTags"></div><div class="modal-3d" id="modal3dContainer"><div class="modal-3d-label">3D-модель · перетащите мышью, чтобы вращать и колёсиком приблизить</div></div><div class="similar"><h3 style="color:#d6ba86">Похожие предметы</h3><div class="similar-grid" id="similarGrid"></div></div></div><div class="details"><h3>ИСТОРИЯ ПРЕДМЕТА</h3><p id="modalDescription"></p><h3>ХАРАКТЕРИСТИКИ</h3><div class="specs" id="modalSpecs"></div><div class="origin"><h3 style="margin-top:0">ПРОИСХОЖДЕНИЕ</h3><div id="modalOrigin"></div></div><h3>ГОЛОС ПРЕДМЕТА</h3><div class="voice"><div class="voice-play" id="modalVoiceBtn">▶</div><div style="min-width:0"><b id="voiceTitle">История от потомка семьи</b><div class="wave"></div></div><span id="voiceTime" style="color:#8f8778;font-size:12px">0:00 / 1:48</span></div><div class="modal-actions"><button class="btn gold" id="modalSaveBtn">В избранное</button><button class="btn ghost" id="modalShareBtn">Поделиться</button></div></div></div></div></div>
-<div class="modal-overlay" id="addModal"><div class="modal" style="max-width:760px"><button class="modal-close" onclick="closeModal('addModal')">×</button><h2>Поделиться семейным предметом</h2><div class="pixel-badge gemini-ok">PROVOD.AI · МУЛЬТИМОДАЛЬНЫЙ АНАЛИЗ</div><p class="lead">Загрузите фотографию: ИИ через provod.ai распознает предмет, предложит музейное описание и автоматически заполнит карточку. Перед отправкой все поля можно исправить вручную.</p><form class="add-form" id="addObjectForm"><div class="upload-area" id="uploadArea">[ ЗАГРУЗИТЬ ФОТО ПРЕДМЕТА ]<input type="file" id="fileInput" accept="image/*"><div id="previewContainer"></div></div><div class="ai-status" id="aiStatus">ЛОКАЛЬНЫЙ ИИ: ОЖИДАНИЕ ИЗОБРАЖЕНИЯ...</div><input id="addName" placeholder="Название предмета *" required><div class="form-row"><select id="addCategory" required><option value="">Категория *</option><option>Архитектура</option><option>Ремесло</option><option>Одежда</option><option>Быт</option><option>Музыка</option><option>Искусство</option><option>Инструменты</option></select><input id="addRegion" placeholder="Регион *" required></div><div class="form-row"><input id="addPeriod" placeholder="Период / датировка"><input id="addMaterial" placeholder="Материал"></div><div class="form-row"><input id="addTechnique" placeholder="Техника изготовления"><input id="addPurpose" placeholder="Назначение"></div><div class="form-row"><input type="number" step="any" id="addLat" placeholder="Широта" required><input type="number" step="any" id="addLng" placeholder="Долгота" required></div><textarea id="addDescription" placeholder="История предмета и его связь с вашей семьёй *" required></textarea><input id="addOwner" placeholder="Кто добавил / происхождение"><input id="addVoice" placeholder="Ссылка на запись голоса потомка семьи (необязательно)"><button class="btn gold" type="submit">Отправить на модерацию</button></form></div></div>
-<div class="modal-overlay" id="collectionModal"><div class="modal" style="max-width:720px"><button class="modal-close" onclick="closeModal('collectionModal')">×</button><h2>Моя коллекция</h2><ul class="object-list" id="collectionList" style="max-height:520px"></ul></div></div>
-<div class="modal-overlay" id="loginModal"><div class="modal" style="max-width:520px"><button class="modal-close" onclick="closeModal('loginModal')">×</button><h2>Личный кабинет</h2><p class="lead">В демонстрационной версии вход имитируется. Здесь можно подключить реальную авторизацию.</p><div class="add-form"><input placeholder="E‑mail"><input type="password" placeholder="Пароль"><button class="btn gold" onclick="closeModal('loginModal')">Войти</button></div></div></div>
+<div class="modal-overlay" id="objectModal"><div class="modal"><button class="modal-close" onclick="closeModal('objectModal')">×</button><div class="breadcrumbs" id="modalBreadcrumbs"></div><div class="object-modal-grid"><div><div class="object-headline"><div><h2 id="modalTitle">Предмет</h2><div class="modal-region" id="modalRegion"></div></div><button class="key-button" id="modalKeyBtn" title="Поставить ключик и сохранить в коллекцию"><span class="key-icon">🔑</span><span id="modalKeyLabel">Ключик</span><span class="key-count" id="modalKeyCount">0</span></button></div><div class="tags" id="modalTags"></div><div class="modal-3d" id="modal3dContainer"><div class="modal-3d-label">3D-превью · вращайте мышью, колёсиком меняйте масштаб</div></div><div class="ai-badge-real">3D в MVP: интерактивное процедурное превью, не нейросеточная реконструкция</div><div class="modal-mini-map" id="modalLocationMap"></div><div class="similar"><h3 style="color:#d6ba86">Похожие предметы</h3><div class="similar-grid" id="similarGrid"></div></div></div><div class="details"><h3>ИСТОРИЯ ПРЕДМЕТА</h3><p id="modalDescription"></p><h3>ХАРАКТЕРИСТИКИ</h3><div class="specs" id="modalSpecs"></div><div class="origin"><h3 style="margin-top:0">ПРОИСХОЖДЕНИЕ</h3><div id="modalOrigin"></div></div><h3>ГОЛОС ПРЕДМЕТА</h3><div class="voice"><div class="voice-play" id="modalVoiceBtn">▶</div><div style="min-width:0"><b id="voiceTitle">История от потомка семьи</b><div class="wave"></div></div><span id="voiceTime" style="color:#8f8778;font-size:12px">живой голос / нейроозвучка</span></div><div class="modal-actions"><button class="btn ghost" id="modalShareBtn">Поделиться</button></div></div></div></div></div>
+
+<div class="modal-overlay" id="addModal"><div class="modal" style="max-width:900px"><button class="modal-close" onclick="closeModal('addModal')">×</button><h2>Поделиться семейным предметом</h2><div class="ai-badge-real">Реальный браузерный ИИ: Transformers.js + vision-модель для предварительного распознавания фото</div><p class="lead">Загрузите фотографию. ИИ предложит тип предмета и черновое описание, но исторические данные пользователь проверяет вручную. Местоположение выбирается кликом на Яндекс Карте.</p><form class="add-form" id="addObjectForm"><div class="upload-area" id="uploadArea">[ ЗАГРУЗИТЬ ФОТО ПРЕДМЕТА ]<input type="file" id="fileInput" accept="image/*"><div id="previewContainer"></div></div><div class="ai-status" id="aiStatus">ИИ: ОЖИДАНИЕ ИЗОБРАЖЕНИЯ...</div><input id="addName" placeholder="Название предмета *" required><div class="form-row"><select id="addCategory" required><option value="">Категория *</option><option>Архитектура</option><option>Ремесло</option><option>Одежда</option><option>Быт</option><option>Музыка</option><option>Искусство</option><option>Инструменты</option></select><input id="addRegion" placeholder="Регион / населённый пункт *" required></div><div class="form-row"><input id="addPeriod" placeholder="Период / датировка"><input id="addMaterial" placeholder="Материал"></div><div class="form-row"><input id="addTechnique" placeholder="Техника изготовления"><input id="addPurpose" placeholder="Назначение"></div><div class="picker-wrap"><div class="picker-title">Место происхождения предмета — приблизьте карту и нажмите на точную точку</div><div id="pickerMap" class="picker-map"></div><div id="pickedAddress" class="picked-address">Точка пока не выбрана</div></div><input class="hidden-coord" type="number" step="any" id="addLat"><input class="hidden-coord" type="number" step="any" id="addLng"><textarea id="addDescription" placeholder="История предмета и его связь с вашей семьёй *" required></textarea><input id="addOwner" placeholder="Кто добавил / происхождение"><div class="voice-upload">Живой голос потомка семьи (необязательно)<br><input id="addVoiceFile" type="file" accept="audio/*"></div><button class="btn gold" type="submit">Отправить на модерацию</button></form></div></div>
+
+<div class="modal-overlay" id="collectionModal"><div class="modal" style="max-width:720px"><button class="modal-close" onclick="closeModal('collectionModal')">×</button><h2>Моя коллекция</h2><p class="lead">Сюда автоматически попадают предметы, которым вы поставили «ключик».</p><ul class="object-list" id="collectionList" style="max-height:520px"></ul></div></div>
+
+<div class="modal-overlay" id="loginModal"><div class="modal" style="max-width:620px"><button class="modal-close" onclick="closeModal('loginModal')">×</button><h2>Личный кабинет</h2><div class="login-profile"><div class="avatar-demo">Н</div><div><b style="font-size:20px">Никита · участник проекта</b><div class="obj-meta">Демонстрационный профиль MVP</div></div></div><div class="profile-stats"><div class="profile-stat"><b>7</b><span>предметов</span></div><div class="profile-stat"><b>486</b><span>ключиков</span></div><div class="profile-stat"><b>8</b><span>место в рейтинге</span></div></div><div class="actions"><button class="btn gold" onclick="closeModal('loginModal');document.getElementById('ranking').scrollIntoView({behavior:'smooth'})">Открыть рейтинг</button><button class="btn" onclick="closeModal('loginModal');openCollectionBtn.click()">Моя коллекция</button></div></div></div>
 </div>
 <script>
 const culturalObjects=[
@@ -130,9 +192,10 @@ const culturalObjects=[
 {id:4,name:'Русская печь',category:'Быт',region:'Вологодская область',lat:59.2205,lng:39.8915,emoji:'🔥',description:'Центр традиционного дома: печь обогревала, кормила и собирала семью. Голосовая история владельца рассказывает о рецептах и зимних вечерах в деревенском доме.',saves:42,shape:'cube',period:'конец XIX века',material:'кирпич, глина',technique:'кладка, обмазка',purpose:'обогрев и приготовление пищи',owner:'Добавлено Марией Лебедевой'},
 {id:5,name:'Резной сундук',category:'Быт',region:'Нижегородская область',lat:56.3269,lng:44.0059,emoji:'🧰',description:'Сундук изготовлен в Нижнем Новгороде в конце XIX века в мастерской купца Ивана Михайловича. Использовался в купеческом быту для хранения одежды и ценностей. Геометрическая и растительная резьба типична для нижегородского Поволжья.',saves:54,shape:'chest',period:'1880–1890-е гг.',material:'липа, сосна',technique:'резьба, сборка на деревянных шипах',purpose:'хранение одежды и ценных вещей',owner:'Передан в цифровой архив семьёй Смирновых; добавил Александр Смирнов'}];
 let savedIds=new Set(),yMap=null,mapMarkers=[],currentObjectId=null,threeScene,threeCamera,threeRenderer,threeMesh,animationFrameId;
+let addOnMapMode=false,pickerMap=null,pickerPlacemark=null,modalLocMap=null,pendingMapPoint=null,currentAudio=null;
 function filtered(){const q=(document.getElementById('searchInput').value||'').toLowerCase(),c=document.getElementById('categoryFilter').value,r=document.getElementById('regionFilter').value;return culturalObjects.filter(o=>(o.name+o.description+o.region).toLowerCase().includes(q)&&(!c||o.category===c)&&(!r||o.region===r))}
 function populateFilters(){const c=[...new Set(culturalObjects.map(o=>o.category))],r=[...new Set(culturalObjects.map(o=>o.region))];categoryFilter.innerHTML='<option value="">Все категории</option>'+c.map(x=>`<option>${x}</option>`).join('');regionFilter.innerHTML='<option value="">Все регионы</option>'+r.map(x=>`<option>${x}</option>`).join('')}
-function renderList(){objectList.innerHTML=filtered().map(o=>`<li onclick="focusObject(${o.id})"><span class="emoji-big">${o.emoji}</span><div class="obj-info"><div class="obj-name">${o.name}</div><div class="obj-meta">${o.region} · ${o.category}</div></div><span style="color:#9c8d75;font-size:12px">★ ${o.saves}</span></li>`).join('')||'<li>Ничего не найдено</li>';heroItems.textContent=culturalObjects.length.toLocaleString('ru-RU')}
+function renderList(){objectList.innerHTML=filtered().map(o=>`<li onclick="focusObject(${o.id})"><span class="emoji-big">${o.emoji}</span><div class="obj-info"><div class="obj-name">${o.name}</div><div class="obj-meta">${o.region} · ${o.category}</div></div><span style="color:#c8a566;font-size:12px">🔑 ${o.saves}</span></li>`).join('')||'<li>Ничего не найдено</li>';heroItems.textContent=culturalObjects.length.toLocaleString('ru-RU')}
 function initMap(){
   if(typeof ymaps==='undefined'){
     console.error('Яндекс Карты не загрузились. Проверь API-ключ и разрешённый домен в кабинете разработчика Яндекс.');
@@ -149,6 +212,14 @@ function initMap(){
       suppressMapOpenBlock:true
     });
     renderMarkers();
+    yMap.events.add('click',e=>{
+      if(!addOnMapMode)return;
+      const coords=e.get('coords');
+      addOnMapMode=false;
+      mapAddHint.classList.remove('active');
+      pendingMapPoint=coords;
+      openAddModal(coords);
+    });
   });
 }
 function renderMarkers(){
@@ -178,7 +249,30 @@ function focusObject(id){
   }
   openObjectModal(id);
 }
-function openObjectModal(id){const o=culturalObjects.find(x=>x.id===id);if(!o)return;currentObjectId=id;modalTitle.textContent=o.name;modalRegion.textContent=`${o.region} · ${o.period}`;modalBreadcrumbs.textContent=`${o.region}  ›  ${o.name}  ›  Предмет`;modalTags.innerHTML=[o.category,o.material,o.technique].map(x=>`<span class="tag">${x}</span>`).join('');modalDescription.textContent=o.description;modalSpecs.innerHTML=`<div class="spec"><span>Место создания</span><span>${o.region}</span></div><div class="spec"><span>Период</span><span>${o.period}</span></div><div class="spec"><span>Материал</span><span>${o.material}</span></div><div class="spec"><span>Техника</span><span>${o.technique}</span></div><div class="spec"><span>Назначение</span><span>${o.purpose}</span></div>`;modalOrigin.textContent=o.owner;similarGrid.innerHTML=culturalObjects.filter(x=>x.id!==id).slice(0,3).map(x=>`<div class="similar-card" onclick="openObjectModal(${x.id})"><div class="similar-icon">${x.emoji}</div><div><b>${x.name}</b><div class="obj-meta">${x.region}</div></div></div>`).join('');modalSaveBtn.textContent=savedIds.has(id)?'В избранном':'В избранное';objectModal.classList.add('active');init3D(o.shape)}
+function openObjectModal(id){
+  const o=culturalObjects.find(x=>x.id===id);if(!o)return;
+  currentObjectId=id;
+  modalTitle.textContent=o.name;
+  modalRegion.textContent=`${o.region} · ${o.period}`;
+  modalBreadcrumbs.textContent=`${o.region}  ›  ${o.name}  ›  Предмет`;
+  modalTags.innerHTML=[o.category,o.material,o.technique].map(x=>`<span class="tag">${x}</span>`).join('');
+  modalDescription.textContent=o.description;
+  modalSpecs.innerHTML=`<div class="spec"><span>Место создания</span><span>${o.region}</span></div><div class="spec"><span>Период</span><span>${o.period}</span></div><div class="spec"><span>Материал</span><span>${o.material}</span></div><div class="spec"><span>Техника</span><span>${o.technique}</span></div><div class="spec"><span>Назначение</span><span>${o.purpose}</span></div>`;
+  modalOrigin.textContent=o.owner;
+  similarGrid.innerHTML=culturalObjects.filter(x=>x.id!==id).slice(0,3).map(x=>`<div class="similar-card" onclick="openObjectModal(${x.id})"><div class="similar-icon">${x.emoji}</div><div><b>${x.name}</b><div class="obj-meta">${x.region}</div></div></div>`).join('');
+  modalKeyCount.textContent=o.saves||0;
+  modalKeyBtn.classList.toggle('active',savedIds.has(id));
+  modalKeyLabel.textContent=savedIds.has(id)?'Ключик поставлен':'Поставить ключик';
+  objectModal.classList.add('active');
+  init3D(o.shape);
+  setTimeout(()=>initObjectLocationMap(o),80);
+}
+function initObjectLocationMap(o){
+  if(typeof ymaps==='undefined'||!document.getElementById('modalLocationMap'))return;
+  if(modalLocMap){try{modalLocMap.destroy()}catch(e){} modalLocMap=null;}
+  modalLocMap=new ymaps.Map('modalLocationMap',{center:[o.lat,o.lng],zoom:9,controls:['zoomControl']},{suppressMapOpenBlock:true});
+  modalLocMap.geoObjects.add(new ymaps.Placemark([o.lat,o.lng],{hintContent:o.name},{preset:'islands#darkGreenIcon',iconColor:'#9b743e'}));
+}
 function closeModal(id){document.getElementById(id).classList.remove('active');if(animationFrameId)cancelAnimationFrame(animationFrameId);if(window.speechSynthesis)window.speechSynthesis.cancel()}
 function init3D(shape){
   const c=modal3dContainer;
@@ -425,17 +519,46 @@ function init3D(shape){
   anim();
 }
 
-function openAddModal(){addModal.classList.add('active')}
-openAddModalBtn.onclick=openAddModal;joinBtn.onclick=openAddModal;loginBtn.onclick=()=>loginModal.classList.add('active');
-modalSaveBtn.onclick=()=>{const o=culturalObjects.find(x=>x.id===currentObjectId);if(savedIds.has(o.id)){savedIds.delete(o.id);o.saves=Math.max(0,o.saves-1)}else{savedIds.add(o.id);o.saves++}savedCount.textContent=savedIds.size;modalSaveBtn.textContent=savedIds.has(o.id)?'В избранном':'В избранное';renderList()};
+function openAddModal(coords=null){
+  addModal.classList.add('active');
+  setTimeout(()=>initPickerMap(coords||pendingMapPoint),100);
+}
+function initPickerMap(coords=null){
+  if(typeof ymaps==='undefined')return;
+  const center=coords||[55.751244,37.618423];
+  if(pickerMap){try{pickerMap.destroy()}catch(e){} pickerMap=null;pickerPlacemark=null;}
+  pickerMap=new ymaps.Map('pickerMap',{center,zoom:coords?12:5,controls:['zoomControl','geolocationControl']},{suppressMapOpenBlock:true});
+  const setPoint=(c)=>{
+    if(pickerPlacemark)pickerMap.geoObjects.remove(pickerPlacemark);
+    pickerPlacemark=new ymaps.Placemark(c,{hintContent:'Место предмета'},{preset:'islands#darkGreenDotIcon',iconColor:'#9b743e',draggable:true});
+    pickerMap.geoObjects.add(pickerPlacemark);
+    addLat.value=c[0].toFixed(6);addLng.value=c[1].toFixed(6);
+    pickedAddress.textContent=`Выбрана точка: ${c[0].toFixed(5)}, ${c[1].toFixed(5)} · координаты подставлены автоматически`;
+    pickerPlacemark.events.add('dragend',()=>setPoint(pickerPlacemark.geometry.getCoordinates()));
+  };
+  if(coords)setPoint(coords);
+  pickerMap.events.add('click',e=>setPoint(e.get('coords')));
+}
+mapAddBtn.onclick=()=>{addOnMapMode=true;mapAddHint.classList.add('active');document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});};
+openAddModalBtn.onclick=()=>openAddModal();loginBtn.onclick=()=>loginModal.classList.add('active');
+modalKeyBtn.onclick=()=>{
+  const o=culturalObjects.find(x=>x.id===currentObjectId);if(!o)return;
+  if(savedIds.has(o.id)){savedIds.delete(o.id);o.saves=Math.max(0,(o.saves||1)-1)}else{savedIds.add(o.id);o.saves=(o.saves||0)+1}
+  savedCount.textContent=savedIds.size;modalKeyCount.textContent=o.saves;modalKeyBtn.classList.toggle('active',savedIds.has(o.id));modalKeyLabel.textContent=savedIds.has(o.id)?'Ключик поставлен':'Поставить ключик';renderList();renderRanking();
+};
 modalShareBtn.onclick=()=>navigator.clipboard?.writeText(location.href).then(()=>modalShareBtn.textContent='Ссылка скопирована');
-modalVoiceBtn.onclick=()=>{const o=culturalObjects.find(x=>x.id===currentObjectId);if(!o)return;if('speechSynthesis'in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(`История от потомка семьи. ${o.description}`);u.lang='ru-RU';u.rate=.9;speechSynthesis.speak(u);modalVoiceBtn.textContent='■';u.onend=()=>modalVoiceBtn.textContent='▶'}};
-openCollectionBtn.onclick=()=>{const arr=culturalObjects.filter(o=>savedIds.has(o.id));collectionList.innerHTML=arr.length?arr.map(o=>`<li onclick="openObjectModal(${o.id});closeModal('collectionModal')"><span class="emoji-big">${o.emoji}</span><div class="obj-info"><div class="obj-name">${o.name}</div><div class="obj-meta">${o.region}</div></div></li>`).join(''):'<li>Пока ничего не сохранено</li>';collectionModal.classList.add('active')};
+modalVoiceBtn.onclick=()=>{
+  const o=culturalObjects.find(x=>x.id===currentObjectId);if(!o)return;
+  if(currentAudio){currentAudio.pause();currentAudio=null;modalVoiceBtn.textContent='▶';return;}
+  if(o.voiceUrl){currentAudio=new Audio(o.voiceUrl);currentAudio.play();modalVoiceBtn.textContent='■';currentAudio.onended=()=>{modalVoiceBtn.textContent='▶';currentAudio=null};return;}
+  if('speechSynthesis'in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(`История от потомка семьи. ${o.description}`);u.lang='ru-RU';u.rate=.9;speechSynthesis.speak(u);modalVoiceBtn.textContent='■';u.onend=()=>modalVoiceBtn.textContent='▶'}
+};
+openCollectionBtn.onclick=()=>{const arr=culturalObjects.filter(o=>savedIds.has(o.id));collectionList.innerHTML=arr.length?arr.map(o=>`<li onclick="openObjectModal(${o.id});closeModal('collectionModal')"><span class="emoji-big">${o.emoji}</span><div class="obj-info"><div class="obj-name">${o.name}</div><div class="obj-meta">${o.region} · 🔑 ${o.saves}</div></div></li>`).join(''):'<li>Пока ничего не сохранено</li>';collectionModal.classList.add('active')};
 searchInput.oninput=()=>{renderList();renderMarkers()};categoryFilter.onchange=regionFilter.onchange=()=>{renderList();renderMarkers()};headerSearch.oninput=e=>{searchInput.value=e.target.value;renderList();renderMarkers();document.getElementById('mapSection').scrollIntoView({behavior:'smooth'})};
 let localVisionPipe=null;
 async function getLocalVision(){
   if(localVisionPipe)return localVisionPipe;
-  aiStatus.textContent='ЛОКАЛЬНЫЙ ИИ: ПЕРВАЯ ЗАГРУЗКА МОДЕЛИ...';
+  aiStatus.textContent='ИИ: ПЕРВАЯ ЗАГРУЗКА VISION-МОДЕЛИ...';
   const {pipeline}=await import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2');
   localVisionPipe=await pipeline('image-to-text','Xenova/vit-gpt2-image-captioning',{dtype:'q8'});
   return localVisionPipe;
@@ -494,32 +617,48 @@ async function analyzeWithLocalAI(file){
   try{
     const dataUrl=await fileToDataUrl(file);
     const pipe=await getLocalVision();
-    aiStatus.textContent='ЛОКАЛЬНЫЙ ИИ: АНАЛИЗИРУЮ ИЗОБРАЖЕНИЕ...';
+    aiStatus.textContent='ИИ: АНАЛИЗИРУЮ ФОТО...';
     const out=await pipe(dataUrl,{max_new_tokens:48});
     const caption=(out?.[0]?.generated_text||'').trim();
     const data=inferFieldsFromCaption(caption);
     addName.value=data.name;
     addCategory.value=data.category;
-    addRegion.value=data.region;
+    if(!addRegion.value||addRegion.value==='Требует уточнения') addRegion.value='';
     addPeriod.value=data.period;
     addMaterial.value=data.material;
     addTechnique.value=data.technique;
     addPurpose.value=data.purpose;
     addDescription.value=data.description;
-    addLat.value=data.lat;
-    addLng.value=data.lng;
-    aiStatus.textContent='ЛОКАЛЬНЫЙ ИИ: ГОТОВО · ОБЪЕКТ РАСПОЗНАН · ОПИСАНИЕ СФОРМИРОВАНО НА РУССКОМ · ПРОВЕРЬТЕ ПОЛЯ';
+    aiStatus.textContent='ИИ: ГОТОВО · ЧЕРНОВОЕ РАСПОЗНАВАНИЕ ВЫПОЛНЕНО · ПРОВЕРЬТЕ ОПИСАНИЕ И ВЫБЕРИТЕ МЕСТО НА КАРТЕ';
     aiStatus.style.opacity='1';
   }catch(err){
     console.error(err);
-    aiStatus.textContent=`ЛОКАЛЬНЫЙ ИИ: ОШИБКА · ${String(err?.message||err)} · МОЖНО ЗАПОЛНИТЬ ВРУЧНУЮ`;
+    aiStatus.textContent=`ИИ: ОШИБКА · ${String(err?.message||err)} · МОЖНО ЗАПОЛНИТЬ ВРУЧНУЮ`;
     aiStatus.style.opacity='1';
   }
 }
 uploadArea.onclick=()=>fileInput.click();
 fileInput.onchange=async e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>previewContainer.innerHTML=`<img src="${ev.target.result}" style="max-width:180px;margin-top:12px">`;r.readAsDataURL(f);await analyzeWithLocalAI(f)};
-addObjectForm.onsubmit=e=>{e.preventDefault();culturalObjects.unshift({id:Date.now(),name:addName.value,category:addCategory.value,region:addRegion.value,lat:+addLat.value,lng:+addLng.value,emoji:'✦',description:addDescription.value,saves:0,shape:'cube',period:addPeriod.value||'не указан',material:addMaterial.value||'не указан',technique:addTechnique.value||'не указана',purpose:addPurpose.value||'семейная реликвия',owner:addOwner.value||'Добавлено участником проекта'});populateFilters();renderList();renderMarkers();closeModal('addModal');addObjectForm.reset();previewContainer.innerHTML='';aiStatus.textContent='ОБЪЕКТ ОТПРАВЛЕН НА МОДЕРАЦИЮ';};
-window.onload=()=>{populateFilters();renderList();initMap()};
+addObjectForm.onsubmit=e=>{
+  e.preventDefault();
+  if(!addLat.value||!addLng.value){pickedAddress.textContent='Сначала выберите точное место на карте';pickedAddress.style.color='#d69072';return;}
+  const n=(addName.value||'').toLowerCase();
+  let shape='cube',emoji='✦';
+  if(n.includes('сундук')||n.includes('шкатул')){shape='chest';emoji='🧰'}
+  else if(n.includes('чаш')||n.includes('мис')||n.includes('тарел')){shape='bowl';emoji='🥣'}
+  else if(n.includes('сапог')||n.includes('обув')||n.includes('ичиг')){shape='boot';emoji='👢'}
+  else if(addCategory.value==='Архитектура'){shape='building';emoji='🏛'}
+  else if(n.includes('печ')){shape='cube';emoji='🔥'}
+  const voiceFile=addVoiceFile.files?.[0];
+  const voiceUrl=voiceFile?URL.createObjectURL(voiceFile):null;
+  culturalObjects.unshift({id:Date.now(),name:addName.value,category:addCategory.value,region:addRegion.value,lat:+addLat.value,lng:+addLng.value,emoji,description:addDescription.value,saves:0,shape,period:addPeriod.value||'не указан',material:addMaterial.value||'не указан',technique:addTechnique.value||'не указана',purpose:addPurpose.value||'семейная реликвия',owner:addOwner.value||'Добавлено участником проекта',voiceUrl});
+  populateFilters();renderList();renderMarkers();renderRanking();closeModal('addModal');addObjectForm.reset();previewContainer.innerHTML='';pickedAddress.textContent='Точка пока не выбрана';aiStatus.textContent='ОБЪЕКТ ОТПРАВЛЕН НА МОДЕРАЦИЮ';pendingMapPoint=null;
+};
+function renderRanking(){
+  const people=[['Анна Петрова','Нижегородская область',1280],['Михаил Орлов','Республика Карелия',1055],['Елена Смирнова','Архангельская область',970],['Илья Сафонов','Татарстан',820],['Софья Кузнецова','Калужская область',760],['Дмитрий Волков','Красноярский край',720],['Дарья Иванова','Алтайский край',680],['Алексей Мельников','Тульская область',642],['Мария Громова','Псковская область',611],['Арсений Котов','Самарская область',584],['Виктория Белова','Вологодская область',552],['Роман Миронов','Пермский край',511],['Алина Морозова','Кировская область',478],['Егор Лебедев','Удмуртия',455],['Полина Федорова','Рязанская область',431],['Николай Жуков','Иркутская область',405],['Ксения Тихонова','Тверская область',382],['Степан Крылов','Ярославская область',360]];
+  rankingList.innerHTML=people.map((p,i)=>`<div class="rank-row ${i<5?'winner':''}"><div class="rank-pos">${i+1}</div><div class="rank-user"><b>${p[0]}</b><small>${p[1]}</small></div><div class="rank-score">${p[2]} <span>🔑</span></div></div>`).join('');
+}
+window.onload=()=>{populateFilters();renderList();renderRanking();initMap()};
 </script>
 </body>
 </html>
